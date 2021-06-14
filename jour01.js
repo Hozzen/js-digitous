@@ -94,12 +94,18 @@ const changeSentence = () => {
 console.log(sentence)
 changeSentence() */
 let toxicRain = 50
+
+let iceNova = 500
+
+let lastHope = 9999999
+
 class Archer {
-    constructor(name, age, bow, quiver) {
+    constructor(name, age, bow, quiver, lifePoint) {
         this.name = name;
         this.age = age;
         this.bow = bow;
         this.quiver = quiver;
+        this.lifePoint = lifePoint
     }
 
     displayInfo(){
@@ -112,12 +118,19 @@ class Archer {
 
     }
 
+    attackLastHope(){
+        iceGolem.health = iceGolem.health - lastHope
+        return `${hozzen.name} utilise toutes ses ressources pour attaquer avec son Last Hope !!! le ${iceGolem.name} subit ${lastHope} points de dégats ! ${iceGolem.monsterHealth()}`
+
+    }
+
 };
 
 class Monster{
-    constructor(name, health){
+    constructor(name, health, attack){
         this.name = name;
         this.health = health;
+        this.attack = attack;
     }
 
     monsterEvent(){
@@ -125,24 +138,33 @@ class Monster{
     }
 
     monsterHealth(){
-        return `Il reste ${this.health} au ${this.name}`
+        return `Il reste ${this.health} HP au ${this.name}`
     }
 
     monsterTakeDamage(){
         this.health = this.health - toxicRain
-        return `${this.name} à subit des dégats il lui reste ${this.health} !`;
+        return `${this.name} à subit des dégats il lui reste ${this.health} HP !`;
 
+    }
+
+    monsterAttack(){
+        hozzen.lifePoint = hozzen.lifePoint - 500
+        return `${this.name} attaque ${hozzen.name} avec ${this.attack} !! ${hozzen.name} subit ${iceNova} points de dégats..
+        Il reste ${hozzen.lifePoint} points de vie à ${hozzen.name}.`
     }
 }
 
-let hozzen = new Archer ("Hozzen", 14, "Kraken Slayer", "bottomless hole");
+let hozzen = new Archer ("Hozzen", 14, "Kraken Slayer", "bottomless hole", 1000);
 
 console.log(hozzen.displayInfo())
 
-let iceGolem = new Monster("Ice Golem", 500)
+let iceGolem = new Monster("Ice Golem", 500, "Ice Nova")
 
 console.log(iceGolem.monsterEvent())
 
 console.log(hozzen.attackEnemy())
 
 console.log(iceGolem.monsterTakeDamage())
+
+console.log(iceGolem.monsterAttack())
+console.log(hozzen.attackLastHope())

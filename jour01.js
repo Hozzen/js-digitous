@@ -59,7 +59,7 @@ console.log(template) */
 
 // JUST FOR FUN
 
-let sentence = "Bonjour"
+/* let sentence = "Bonjour"
 
 const changeSentence = () => {
     let amusement = sentence.split("");
@@ -91,4 +91,21 @@ const changeSentence = () => {
 
 };
 
-changeSentence()
+changeSentence() */
+
+class Archer {
+    constructor(name, age, bow, quiver) {
+        this.name = name;
+        this.age = age;
+        this.bow = bow;
+        this.quiver = quiver;
+    }
+
+    displayInfo(){
+        return `${this.name} is a young archer, he is ${this.age}. He is used to kill his enemies with his bow named ${this.bow} and he keep his arrow is his quiver ${this.quiver} !`
+    }
+};
+
+let hozzen = new Archer ("Hozzen", 14, "Kraken Slayer", "bottomless hole");
+
+console.log(hozzen.displayInfo())

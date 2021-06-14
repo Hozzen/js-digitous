@@ -107,8 +107,11 @@ class Archer {
     }
 
     attackEnemy(){
-        return `${this.name} attaque l'ennemie avec son ${this.bow} !! Il utilise le sort Toxic Rain!`
+        return `${this.name} attaque l'ennemie avec son ${this.bow} !! Il utilise le sort Toxic Rain!
+        Le ${iceGolem.name} subit ${toxicRain} points de dégats`;
+
     }
+
 };
 
 class Monster{
@@ -118,7 +121,7 @@ class Monster{
     }
 
     monsterEvent(){
-        return `Un ${this.name} Attaque ${hozzen.name}`
+        return `Un ${this.name} Attaque ${hozzen.name} il a ${this.health} HP!`
     }
 
     monsterHealth(){
@@ -126,7 +129,9 @@ class Monster{
     }
 
     monsterTakeDamage(){
-        return `${this.name} à subit des dégats il lui reste ${this.health} !`
+        this.health = this.health - toxicRain
+        return `${this.name} à subit des dégats il lui reste ${this.health} !`;
+
     }
 }
 
@@ -137,3 +142,7 @@ console.log(hozzen.displayInfo())
 let iceGolem = new Monster("Ice Golem", 500)
 
 console.log(iceGolem.monsterEvent())
+
+console.log(hozzen.attackEnemy())
+
+console.log(iceGolem.monsterTakeDamage())

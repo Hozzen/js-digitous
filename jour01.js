@@ -91,8 +91,9 @@ const changeSentence = () => {
 
 };
 
+console.log(sentence)
 changeSentence() */
-
+let toxicRain = 50
 class Archer {
     constructor(name, age, bow, quiver) {
         this.name = name;
@@ -104,8 +105,35 @@ class Archer {
     displayInfo(){
         return `${this.name} is a young archer, he is ${this.age}. He is used to kill his enemies with his bow named ${this.bow} and he keep his arrow is his quiver ${this.quiver} !`
     }
+
+    attackEnemy(){
+        return `${this.name} attaque l'ennemie avec son ${this.bow} !! Il utilise le sort Toxic Rain!`
+    }
 };
+
+class Monster{
+    constructor(name, health){
+        this.name = name;
+        this.health = health;
+    }
+
+    monsterEvent(){
+        return `Un ${this.name} Attaque ${hozzen.name}`
+    }
+
+    monsterHealth(){
+        return `Il reste ${this.health} au ${this.name}`
+    }
+
+    monsterTakeDamage(){
+        return `${this.name} à subit des dégats il lui reste ${this.health} !`
+    }
+}
 
 let hozzen = new Archer ("Hozzen", 14, "Kraken Slayer", "bottomless hole");
 
 console.log(hozzen.displayInfo())
+
+let iceGolem = new Monster("Ice Golem", 500)
+
+console.log(iceGolem.monsterEvent())

@@ -34,8 +34,8 @@ console.log(food.replace("meh", "so good")) */
 // 06 - Up and down
 
 /* var basic = "This is Cool"
-var basicUp = "BASIC"
-var basicDown = "basic"
+var basicUp = basic.toUpperCase()
+var basicDown = basic.toLowerCase()
 
 console.log(basic, basicUp, basicDown) */
 
@@ -49,10 +49,46 @@ console.log(letters) */
 
 // 08 - template
 
-var age = 22
+/* var age = 22
 
 var template = "i'm" + ` ${age} ` + "years old"
 
 var template = `i'm ${age} years old`
 
-console.log(template)
+console.log(template) */
+
+// JUST FOR FUN
+
+let sentence = "Bonjour"
+
+const changeSentence = () => {
+    let amusement = sentence.split("");
+    for (let i = 0; i < amusement.length ; i++) {
+        if (amusement[i] === "B") {
+            amusement.splice(0, 1, "A")
+        }
+        if (amusement[i] === "o") {
+            amusement.splice(1,1,"u")
+        }
+        if (amusement[i] === "n") {
+            amusement.splice(2,1,"r")
+        }
+        if (amusement[i] === "j") {
+            amusement.splice(3,1,"e")
+        }
+        if (amusement[i] !== "euuuh" ) {
+            amusement.splice(4,1,"v")
+        }
+        if (amusement[i] !== "c'est pas mal avec des !== en fait ") {
+            amusement.splice(5,1,"o")
+        }
+        if (amusement[i] === "r") {
+            amusement.splice(6,1,"ir!")
+        }
+    }
+    amusement = amusement.join('')
+    console.log(amusement)
+
+};
+
+changeSentence()

@@ -119,7 +119,8 @@ switch(month) {
     case "December":
         console.log("Winter");
     break;
-
+    default:
+        console.log("Month is missing")
 } */
 
 // Bonus III

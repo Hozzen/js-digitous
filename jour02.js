@@ -79,7 +79,7 @@ if (random === 6) {
 } */
 
 // Bonus II
-
+/* 
 let month = "January"
 
 switch(month) {
@@ -120,4 +120,29 @@ switch(month) {
         console.log("Winter");
     break;
 
+} */
+
+// Bonus III
+
+let roundedNumber = 12.6
+
+/* console.log(Math.ceil(roundedNumber))
+console.log(Math.floor(roundedNumber))
+console.log(Math.round(roundedNumber)) */
+
+/* if ((roundedNumber - Math.floor(roundedNumber)) >= 0.5 ) {
+    console.log(Math.ceil(roundedNumber))
+} else {
+    console.log(Math.floor(roundedNumber))
+} */
+
+
+if ((roundedNumber - Math.floor(roundedNumber)) >= 0.5 ) {
+    console.log(Math.ceil(roundedNumber))
+} else {
+    console.log(Math.floor(roundedNumber))
 }
+
+
+
+

@@ -125,7 +125,7 @@ switch(month) {
 
 // Bonus III
 
-let roundedNumber = 12.6
+// let roundedNumber = 12.6
 
 /* console.log(Math.ceil(roundedNumber))
 console.log(Math.floor(roundedNumber))
@@ -137,12 +137,27 @@ console.log(Math.round(roundedNumber)) */
     console.log(Math.floor(roundedNumber))
 } */
 
+// MAUVAISE VERSION
 
 /* if ((roundedNumber - Math.floor(roundedNumber)) >= 0.5 ) {
     console.log(Math.ceil(roundedNumber).toString().substring(0))
 } else {
     console.log(Math.floor(roundedNumber).toString().substring(0))
 } */
+
+// BONNE VERSION
+
+let roundedNumber = 12.2
+
+let roundedNumberStr = roundedNumber.toString()
+
+// console.log(roundedNumberStr.substring(roundedNumberStr.indexOf(".")))
+
+if (roundedNumberStr.substring(roundedNumberStr.indexOf(".")) >= 0.5) {
+    console.log(Math.ceil(roundedNumber).toString().substring(0))
+} else {
+    console.log(Math.floor(roundedNumber).toString().substring(0))
+}
 
 // BONUS ULTIME
 

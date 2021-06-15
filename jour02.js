@@ -137,11 +137,15 @@ console.log(Math.round(roundedNumber)) */
 } */
 
 
-if ((roundedNumber - Math.floor(roundedNumber)) >= 0.5 ) {
-    console.log(Math.ceil(roundedNumber))
+/* if ((roundedNumber - Math.floor(roundedNumber)) >= 0.5 ) {
+    console.log(Math.ceil(roundedNumber).toString().substring(0))
 } else {
-    console.log(Math.floor(roundedNumber))
-}
+    console.log(Math.floor(roundedNumber).toString().substring(0))
+} */
+
+// BONUS ULTIME
+
+
 
 
 

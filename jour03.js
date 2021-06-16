@@ -58,14 +58,44 @@ console.log(total);
  */
 // 06 - Reverse
 
-let sentence = "Hello Konexio !";
+/* let sentence = "Hello Konexio !";
 
-function reverse(str) {
-    let reversed ="";
-    for (let i = str.length - 1; i >= 0; i--){
-        reversed += str[i];
+
+let reversedSentence ="";
+for (let i = sentence.length - 1; i >= 0; i--){
+    reversedSentence += sentence[i];
+}
+console.log(reversedSentence)
+
+ */
+// Bonus I 
+
+/* for (let i = 1; i <= 100; i ++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("fizzbuzz") 
+    } else if (i % 3 === 0) {
+        console.log("fizz")
+    } else if (i % 5 === 0) {
+        console.log("buzz")
+    } else if (i % 7 === 0) {
+        console.log("")
+    } else {
+        console.log(i)
     }
-    return reversed;
+} */
+
+// Bonus II 
+
+let i = 0;
+let total = 0;
+let limit = 10;
+
+while (i < limit) {
+    i++;
+    total += i;
+
 };
 
-reverse(sentence)
+console.log(total)
+
+// Bonus III 

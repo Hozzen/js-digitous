@@ -100,11 +100,31 @@ console.log(total) */
 
 // Bonus III 
 
-let promo = ["Baydir", "Rahmad", "Amadou", "Andy", "Ange", "Artha", "Victor", "Laura", "Kévin", "Asaad", "Emran", "Anthony", "Julien", "Eliott", "Amar", "Elodie", "Yanhchen"];
+/* let promo = ["Baydir", "Rahmad", "Amadou", "Andy", "Ange", "Artha", "Victor", "Laura", "Kévin", "Asaad", "Emran", "Anthony", "Julien", "Eliott", "Amar", "Elodie", "Yanhchen"];
 
 let random = Math.floor(Math.random() * promo.length)
 
-console.log(promo[random])
+console.log(promo[random]) */
 
 // Bonus IV
 
+let array = []
+
+for (let i = 1; i <= 20; i++) {
+    let randomNumber = Math.floor(Math.random() * 100 +1)
+    array.push(randomNumber)
+}
+
+console.log(array)
+
+let array2 = [0]
+
+for (let i = 0; i < array.length; i++) {
+    if (array2 < array[i]) {
+        array2.push(array[i]);
+        array2.shift();
+
+    }
+}
+
+console.log(array2)

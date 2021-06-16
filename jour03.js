@@ -86,7 +86,7 @@ console.log(reversedSentence)
 
 // Bonus II 
 
-let i = 0;
+/* let i = 0;
 let total = 0;
 let limit = 10;
 
@@ -96,6 +96,15 @@ while (i < limit) {
 
 };
 
-console.log(total)
+console.log(total) */
 
 // Bonus III 
+
+let promo = ["Baydir", "Rahmad", "Amadou", "Andy", "Ange", "Artha", "Victor", "Laura", "Kévin", "Asaad", "Emran", "Anthony", "Julien", "Eliott", "Amar", "Elodie", "Yanhchen"];
+
+let random = Math.floor(Math.random() * promo.length)
+
+console.log(promo[random])
+
+// Bonus IV
+

@@ -79,7 +79,7 @@ format(3700) */
 
 // Bonus 
 
-const generatePassword = (num) => {
+/* const generatePassword = (num) => {
     var password = ""
     const letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
  
@@ -99,4 +99,29 @@ const generatePassword = (num) => {
     
 }
 
-generatePassword(7)
+generatePassword(7) */
+
+// Bonus II 
+
+const launchDice = (numberOfDice) => {
+    var player1 = 0;
+    var player2 = 0;
+
+    for(let i = 0; i < numberOfDice; i++) {
+        player1 += (Math.floor(Math.random() * 6 + 1));
+        player2 += (Math.floor(Math.random() * 6 + 1));
+    };
+
+    console.log("Le joueur 1 à un score de " + player1);
+    console.log(" Le joueur 2 à un score de " + player2);
+
+    if (player1 === player2) {
+        console.log("Egalitée entre les deux joueurs")
+    } else if (player1 > player2) {
+        console.log("Le joueur 1 l'emporte !")
+    } else {
+        console.log("Le joueur 2 l'emporte !")
+    }
+}
+
+launchDice(5)

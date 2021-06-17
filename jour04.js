@@ -56,7 +56,7 @@ compare(237,2394) */
 
 // 05 - Add Up
 
-const addUp = (num) => {
+/* const addUp = (num) => {
     var num2 = num;
     for(let i = 0; i < num; i++) {
         num2 += i;
@@ -64,4 +64,15 @@ const addUp = (num) => {
     console.log(num2)
 }
 
-addUp(12)
+addUp(12) */
+
+// 06 - Time 
+
+/* const format = (num) => {
+    var hours = Math.floor(num / 3600);
+    var minutes = Math.floor((num - (hours * 3600)) / 60);
+    var seconds = num - (hours * 3600) - (minutes * 60);
+    console.log(hours + ":" + minutes + ":" + seconds)
+}
+
+format(3700) */

@@ -76,3 +76,27 @@ addUp(12) */
 }
 
 format(3700) */
+
+// Bonus 
+
+const generatePassword = (num) => {
+    var password = ""
+    const letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+ 
+
+    for (let i = 0; i < num; i++){
+        var random = Math.floor(Math.random() * letters.length);
+        var randomLetter = letters[random];
+        password += randomLetter;
+    }
+
+    if (num < 6 || num > 15) {
+        console.log("error")
+    } else {
+        console.log(password.toUpperCase())
+    }
+
+    
+}
+
+generatePassword(7)

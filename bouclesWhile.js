@@ -53,3 +53,8 @@ if (ussainBolt >= 100) {
 
 // 05 - Encore des boites 
 
+no loop
+
+console.log(i) : 0 
+console.log(box1) : 7
+

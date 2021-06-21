@@ -36,11 +36,18 @@ console.log(result) */
 
 // 04 - Des boites
 console.log(box1+box2) : 10 (In the loop)
+
 console.log(box1) : 5
 console.log(box2) : 18
 console.log(i) : 13
 
 // 05 - Des setiob 
+
+console.log(box1) : 40
+console.log(i) : 3
+
+// 06 - Encore des boîtes
+
 
 
 

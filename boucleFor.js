@@ -35,18 +35,42 @@ console.log(result) */
 
 
 // 04 - Des boites
-console.log(box1+box2) : 10 (In the loop)
 
-console.log(box1) : 5
-console.log(box2) : 18
-console.log(i) : 13
+/* console.log(box1+box2) : 10 (In the first loop)
+console.log(box1+box2) : 34 (In the second loop)
+
+console.log(box1) : 17 
+console.log(box2) : 30 
+console.log(i) : 14
 
 // 05 - Des setiob 
 
-console.log(box1) : 40
-console.log(i) : 3
+1st loop : 12
+2nd loop : 33
+3rd loop : 39
+4th loop : 42
+
+console.log(box1) : 42
+
+console.log(i) : 0 */
 
 // 06 - Encore des boîtes
+
+/* 1st loop : log = 0 (box2 : 4)
+2nd loop : log = 3 (box1 : -1)
+3rd loop : log = -3 (box2 : 5)
+4th loop : log = -2 (box1 : -2)
+
+
+console.log(box1) : 5
+console.log(box2) : -2
+console.log(i) : -4 */
+
+
+
+
+
+
 
 
 

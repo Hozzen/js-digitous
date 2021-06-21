@@ -17,7 +17,7 @@ console.log(result) */
 
 // 02 - Max
 
-let numbers = []
+/* let numbers = []
 min = 50
 max = 200
 
@@ -26,11 +26,33 @@ for(let i = 0; i < 50; i++) {
 }
 
 console.log(numbers)
-biggestNum = 0
+let biggestNum = 0
 
 for(let i = 0; i < numbers.length; i++){
     if (biggestNum < numbers[i]){
         biggestNum = numbers[i]
     }
 }
-console.log(biggestNum)
+console.log(biggestNum) */
+
+// 03 - Unique
+
+let numbers = []
+min = 50
+max = 200
+for (let i = 0 ; i < 50 ; i++) {
+    numbers.push(Math.floor(Math.random() * (max - min +1) + min))
+}
+
+console.log(numbers)
+let x = 0;
+let result = 0;
+
+while(x < numbers.length){
+    if (numbers[x] >= 75 && numbers[x] <= 100){
+        result = numbers[x]
+        break
+    }
+    x++
+}
+console.log(result)

@@ -33,15 +33,17 @@ while(ussainBolt <= 100 || tysonGay <= 100) {
     ussainBolt += random1;
     tysonGay += random2;
 
-    let ubWin = "Ussain BOLT EST VAINQUEUR!!!"
-    let tgWin = "Tyson GAY EST VAINQUEUR!!!"
 
-    if (ussainBolt >= 100) {
-        return console.log(ubWin);
-    } else if (tysonGay >= 100) {
-        return console.log(tgWin);
-    }
     
+}
+
+let ubWin = "Ussain BOLT EST VAINQUEUR!!!"
+let tgWin = "Tyson GAY EST VAINQUEUR!!!"
+
+if (ussainBolt > tysonGay) {
+    console.log(ubWin);
+} else if (tysonGay > ussainBolt) {
+    console.log(tgWin);
 }
 
 

@@ -24,27 +24,32 @@ console.log(count) */
 // 03 - Course
 
 let ussainBolt = 0;
-
 let tysonGay = 0;
 
-while(ussainBolt <= 100 && tysonGay <= 100) {
+while(ussainBolt <= 100 || tysonGay <= 100) {
     random1 = Math.floor(Math.random() * 10 +1);
     random2 = Math.floor(Math.random() * 10 +1);
 
     ussainBolt += random1;
     tysonGay += random2;
 
+    let ubWin = "Ussain BOLT EST VAINQUEUR!!!"
+    let tgWin = "Tyson GAY EST VAINQUEUR!!!"
+
+    if (ussainBolt >= 100) {
+        return console.log(ubWin);
+    } else if (tysonGay >= 100) {
+        return console.log(tgWin);
+    }
+    
 }
 
-if (ussainBolt >= 100) {
-    console.log("Ussain BOLT EST VAINQUEUR!!!")
-} else if (tysonGay >= 100) {
-    console.log("Tyson GAY EST VAINQUEUR!!!")
-}
+
+
 
 // 04 - Des boites
 
-1st loop : console.log(box2) : 5
+/* 1st loop : console.log(box2) : 5
            console.log(box1) : 2
 
 2nd loop : console.log(box2) : 5
@@ -56,5 +61,5 @@ if (ussainBolt >= 100) {
 no loop
 
 console.log(i) : 0 
-console.log(box1) : 7
+console.log(box1) : 7 */
 

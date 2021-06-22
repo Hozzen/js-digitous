@@ -43,6 +43,37 @@ console.log(multiply(parseInt(process.argv.slice(2))))
 
 console.log(addition(parseInt(process.argv.slice(3)))) */
 
-04 - Guess
+// 04 - Guess
 
+var prompt = require("prompt");
+
+prompt.start();
+
+var min = 1
+var max = 100
+var mysteryNum = Math.floor(Math.random() * (max - min) + min)
+
+
+
+
+const play = () => {
+   prompt.get({name: "num" ,description: "Quel est le nombre mystère ?"}, function (err, res){
+    res.num = parseInt(res.num)
+    if(typeof res.num !== 'number' ) {
+        console.log("Ce n'est pas un nombre");
+        play();
+    } else if (res.num < mysteryNum) {
+        console.log("C'est plus!");
+        play();
+    } else if (res.num > mysteryNum) {
+        console.log("C'est moins!");
+        play();
+    } else if (res.num === mysteryNum) {
+        console.log("Bravo!!");
+    }
+   })
+
+}
+
+play()
 

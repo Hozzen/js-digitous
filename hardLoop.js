@@ -59,7 +59,7 @@ console.log(result) */
 
 // 04 - Nested Loop 
 
-/* let words = ["hello", "goodbye", "yes", "no", "stop", "go go go"];
+let words = ["hello", "goodbye", "yes", "no", "stop", "go go go"];
 
 let splitWords = []
 
@@ -67,9 +67,9 @@ for (let i = 0; i < words.length ; i++) {
     splitWords.push(words[i].split(""))
 
 }
-console.log(splitWords) */
+console.log(splitWords)
 
-/* let oCount = 0
+let oCount = 0
 let count = 0
 for(let i = 0 ; i < splitWords.length; i++){
     if(splitWords[i] == "o"){
@@ -79,7 +79,7 @@ for(let i = 0 ; i < splitWords.length; i++){
 }
 
 console.log(oCount)
-console.log(count) */
+console.log(count)
 
 
 

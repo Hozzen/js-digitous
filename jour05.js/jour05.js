@@ -44,7 +44,7 @@ console.log(multiply(parseInt(process.argv.slice(2))))
 console.log(addition(parseInt(process.argv.slice(3)))) */
 
 // 04 - Guess
-
+/* 
 var prompt = require("prompt");
 
 prompt.start();
@@ -75,5 +75,54 @@ const play = () => {
 
 }
 
+play() */
+
+
+// LE BONUS LET'S GO
+
+var colors = require('colors');
+
+var prompt = require("prompt");
+
+prompt.start();
+
+var stringArr = ["VNNEE","VRDUE","VINGO","VRAND","VENTE","VOCAL"]
+
+var count = 1
+
+var mysteryString = stringArr[Math.floor(Math.random() * stringArr.length +1)]
+
+
+
+const play = () => {
+    prompt.get({name: "mot", description: "Quel est le mot mystère (En 5 lettres)?"}, function(err, res) {
+        if(count > 6) {
+            console.log("You lost")
+        } else if(res.mot[0] == mysteryString[0]) {
+            res.mot[0] = res.mot[0].red;
+            console.log(res.mot);
+            count++;
+            play()
+        } else if (res.mot[1] == mysteryString[1]) {
+            res.mot[1] = res.mot[1].red;
+            console.log(res.mot);
+            count++;
+        } else {
+            console.log("I'M AN IDIOT");
+        }
+        console.log(res.mot[0]);
+    }
+    
+    )
+}
+
+
+
 play()
+
+
+
+
+
+
 

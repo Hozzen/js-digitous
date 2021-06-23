@@ -44,7 +44,26 @@ checkPal("laptop") */
 
 // 04 - Swap
 
-const swap = () => {
-    
+/* const swap = (str) => {
+    str = str.split("");
+    console.log(str);
+    for(let i = 0; i < str.length; i++){
+        if(str[i] == str[i].toUpperCase()){
+            str[i] = str[i].toLowerCase();
+        } else {
+            str[i] = str[i].toUpperCase()
+        }
+    };
+    str = str.join("")
+    console.log(str)
 }
+
+swap("BoNjOur") */
+
+// BONUS I
+
+const makeItSpongeBob = (str) => {
+
+}
+
 

@@ -80,7 +80,7 @@ play() */
 
 // LE BONUS LET'S GO
 
-var colors = require('colors');
+/* var colors = require('colors');
 
 var prompt = require("prompt");
 
@@ -119,6 +119,8 @@ const play = () => {
 
 
 play()
+ */
+
 
 
 

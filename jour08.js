@@ -31,5 +31,30 @@ axios
 
 var axios = require("axios");
 
+const getFact = () => {
+    axios
+        .get("https://api.chucknorris.io/jokes/random")
+        .then((res) => {
+            // console.log(res);
+            data = res.data;
+
+            // randomNum = Math.floor(Math.random() * data.value.length +1 ) 
+
+            console.log(data.value)
+
+            // for(let i = 0; i < data.value.length; i++) {
+
+            // }
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+};
+
+getFact()
+
+
+
+
 
 

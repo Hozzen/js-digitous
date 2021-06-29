@@ -29,7 +29,7 @@ axios
 // 02 - Chuck Norris 
 
 
-var axios = require("axios");
+/* var axios = require("axios");
 
 const getFact = () => {
     axios
@@ -52,9 +52,59 @@ const getFact = () => {
 };
 
 getFact()
+ */
+
+// Je laisse mes erreurs pour me souvenir de ma bêtise
 
 
+/* var axios = require("axios");
 
+const catchPokemon = () => {
+    axios
+        .get("https://pokeapi.co/api/v2/pokemon?limit=100&offset=200")
+        .then((res) => {
+            // console.log(res.data)
+            var data = res.data.results
+            // console.log(data)
+            data.forEach((pokemon, num) => {
+                
+                console.log(`
+                id : ${num + 1}
+                name : ${pokemon.name}
+                `)
+            })
+
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+}
+
+catchPokemon() */
+
+// Feels bad to be an idiot... Let's try again
+
+var axios = require("axios");
+
+const catchPokemon = (id) => {
+    axios
+        .get(`https://pokeapi.co/api/v2/pokemon/${id}`)
+        .then((res) => {
+            // console.log(res.data.name)
+            var data = res.data.name
+            console.log(`
+            id : ${id}
+            name : ${data}
+            `)
+        })
+        .catch((err) =>  {
+            console.log(err)
+        })
+}
+
+catchPokemon(9)
+
+// Feels better to succeed.. guess i could've been faster tho, i hope i'll remember all i've done.
 
 
 

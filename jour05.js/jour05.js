@@ -80,7 +80,7 @@ play() */
 
 // LE BONUS LET'S GO
 
-/* var colors = require('colors');
+var colors = require('colors');
 
 var prompt = require("prompt");
 
@@ -94,11 +94,12 @@ var mysteryString = stringArr[Math.floor(Math.random() * stringArr.length +1)]
 
 
 
-const play = () => {
+/* const play = () => {
     prompt.get({name: "mot", description: "Quel est le mot mystère (En 5 lettres)?"}, function(err, res) {
-        if(count > 6) {
+        var myGuess = ""
+        if(count >= 6) {
             console.log("You lost")
-        } else if(res.mot[0] == mysteryString[0]) {
+        } else if(res.mot[0] === mysteryString[0]) {
             res.mot[0] = res.mot[0].red;
             console.log(res.mot);
             count++;
@@ -114,12 +115,40 @@ const play = () => {
     }
     
     )
+} */
+
+const play = () => {
+    prompt.get({name: "mot", description: "Quel est le mot mystère (En 5 lettres)?"}, function(err, res) {
+        mysteryString = mysteryString.split("")
+        res.mot = res.mot.split("")
+
+        if(count > 6) {
+            console.log("You lost")
+        }
+
+        for(let i = 0; i < mysteryString.length; i++){
+            if(res.mot[i] === mysteryString[i]){
+                res.mot[i] = res.mot[i].red;
+                console.log(res.mot.join(""))
+            } else if (res.mot[i] === mysteryString.includes(res.mot[i])) {
+                res.mot[i] = res.mot[i].yellow;
+                console.log(res.mot.join(""))
+            } else if(res.mot[i]) {
+                console.log("Aucunes lettres ne correspond")
+            }
+        }
+        mysteryString = mysteryString.join("")
+        res.mot = res.mot.join("")
+        play()
+        count++
+
+    }
+    
+    )
 }
 
-
-
 play()
- */
+
 
 
 

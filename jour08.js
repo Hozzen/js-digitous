@@ -1,12 +1,14 @@
-var axios = require("axios");
+// 01 - Countries 
+
+/* var axios = require("axios");
 const { join } = require("lodash");
 
 
 axios
     .get("https://restcountries.eu/rest/v2/all")
     .then((res) => {
-/*         console.log(res)
-        console.log(res.data) */
+        // console.log(res)
+        // console.log(res.data)
         var countriesNames = [];
         var data = res.data;
 
@@ -21,5 +23,11 @@ axios
     })
     .catch((err) => {
         console.log(err);
-    })
+    }) */
+
+
+// 02 - Chuck Norris 
+
+
+var axios = require("axios")
 
